@@ -1,35 +1,78 @@
-<<<<<<< HEAD
------BEGIN RSA PRIVATE KEY-----
-Proc-Type: 4,ENCRYPTED
-DEK-Info: AES-128-CBC,62EA9C9138A03B574D3D3A58B233F3C9
+# Project 2 - *NYTS |Saintilien wilson*
 
-T5rBqRsLaztYGTRbC2I4r6kJgV0vewEiRLF30SpeCFew1Q3OLSlUDs9u2rebrMKs
-wVlB+pNnyLATroXVQsKjb29x5k5cN6aAkegpM2J+PLOwGH52LaTMiAGAJgjHEYg5
-bjkwu3eNve2IuZgUIOWF/Iny1bDjQ9vOsClEpa8Rqu20tBdkDLQcznD10qGK0W2s
-hb8+hfeorR9FGOASWtN5bQBBiWLY2t3+/UYUIrV4sUzLHY3mV72GOtN6/4w1fK7j
-pdlgw0uadgIh5waqyeJHmgbIPuySVxL/r8LEgOeNOGL9ALhbD1m1I0ukKjD7XLDg
-HRKql5NoeGNuCwbgzpUqMM4flzYkQo5I3AENfh3UPazko4b9gWS0ZHOLTOjybxHD
-AAGEZYUokE9OAQGJbPSUyWM90arlXqt6IKULT3NRYZxkSreE49WJrz2V5WO5SIwV
-cRRZC8H/U713bMqQntoAk/19lX2vo9u8xN6QRa/sDJDRQxKeXryUgwx55guAdZ5x
-xwobnhNzJ+NyWejisaz3HnxE9bguxHzrtuhwJgOcuYatwCf7laukTyDY+1hsWjhR
-fjxAIKjPHV1gVI2N/OwZqpIcRYWFEryUS1+OBJQCn6wE0ZlbDq4kgtS6fGm+TCku
-pSPPz+KhLP8SwsBvZgBK7zmxbLeSTXuQatk1tKIlvg7ACPybInNkDAPSbs25zP1H
-LWbak2Q8sFwjUSnENfysbS8CyG9Sfd65ds9GxXGNmyVW9s1KW41Px7EzC3T4IoDM
-RpK7Lg+3XKK4h98zFtinAIcT9yQa5iFOF3/UbZao5ywlpKTUT8+ftiY6qz8AecuZ
-0/ZCRrKK02YgVYA/SwfVr9rYao5qCDDWFNmWsk/D+tbqWAMorq1Jr7pr9mbwyHGV
-9bMrSQeGjUjjY6QmZj13dPP82GMjGxzBCxxUoWX9vVB8TIgkmWC7v3Fo+OE1vx9+
-SposFY2xfQdyGZMpp5xMTdSJN65/G51RgaiPAMxHverYtpKaKgk/Cp1+/JirgFLb
-Eqi2vYRyYxO34XyDE+kE6+2KnzQccw2aKLxy2atO94HjCJvDI+1a+MKW8Pje2Zq3
-nixhnNGmjzxOrZ/OvRPXu1vREMRZPG+g0e+5FrtK7Zyx5rN4HcOBh1D/m4zcAn0S
-D0eJy9Lp4WsBGAGb2ZVEGu6PXA5e0ZUanT8ICkCvc3NL/qI5ZSC1LEbFZ84sn7oD
-wsH4K8qCqMAAM6JqOCtMfxrmzxVWRUeA1iFMgubRcVD91AJkSjbdmZVLN3UpDv5N
-lQdykgRBF9GQKPi7X8sV9HRoEe1avkEvHOsY1mT4UHttmNvj32JfpTgCEAm3cBHy
-GY328hQJhTKQfy4r+6/71sXkax296Q+uS1A2RlznqiKPa35vWKU9TDNex4B9rrw4
-kpleLYuEmFofinEMVYeDsjkhgSyFE+ltzQTPz27ihAl7dhgg/L0xZxmU6ig85tPL
-FL/arXDmjnMNZjyqtqn6geyHfjLtPYGXBJquCABGxZFzL6DCKncLlP85WfcyhHfA
-ftOduujN8/8LDJCbcN7nNTnUzdUcNfoOVRzqExQtTHsh/dj0VQKJa0ugQnGs6bKc
------END RSA PRIVATE KEY-----
-=======
-# NewYorkTimeSearch
-MyNewYorkTimes Search
->>>>>>> 7e2988c96182853eac0eb68c4a999c9155697a30
+**New York Times Search** is an android app that allows a user to search for articles on web using simple filters. The app utilizes [New York Times Search API](http://developer.nytimes.com/docs/read/article_search_api_v2).
+
+Time spent: **32** hours spent in total
+
+## User Stories
+
+The following **required** functionality is completed:
+
+* [x] User can **search for news article** by specifying a query and launching a search. Search displays a grid of image results from the New York Times Search API.
+* [x] User can click on "settings" which allows selection of **advanced search options** to filter results
+* [x] User can configure advanced search filters such as:
+  * [x] Begin Date (using a date picker)
+  * [x] News desk values (Arts, Fashion & Style, Sports)
+  * [x] Sort order (oldest or newest)
+* [x] Subsequent searches have any filters applied to the search results
+* [x] User can tap on any article in results to view the contents in an embedded browser.
+* [ ] User can **scroll down to see more articles**. The maximum number of articles is limited by the API search.
+
+The following **optional** features are implemented:
+
+* [ ] Implements robust error handling, [check if internet is available](http://guides.codepath.com/android/Sending-and-Managing-Network-Requests#checking-for-network-connectivity), handle error cases, network failures
+* [x] Used the **ActionBar SearchView** or custom layout as the query box instead of an EditText
+* [x] User can **share an article link** to their friends or email it to themselves
+* [ ] Replaced Filter Settings Activity with a lightweight modal overlay
+
+The following **bonus** features are implemented:
+
+* [ ] Use the [RecyclerView](http://guides.codepath.com/android/Using-the-RecyclerView) with the `StaggeredGridLayoutManager` to display improve the grid of image results
+* [ ] For different news articles that only have text or only have images, use [Heterogenous Layouts](http://guides.codepath.com/android/Heterogenous-Layouts-inside-RecyclerView) with RecyclerView
+* [ ] Use Parcelable instead of Serializable using the popular [Parceler library](http://guides.codepath.com/android/Using-Parceler).
+* [ ] Leverages the [data binding support module](http://guides.codepath.com/android/Applying-Data-Binding-for-Views) to bind data into layout templates.
+* [ ] Replace all icon drawables and other static image assets with [vector drawables](http://guides.codepath.com/android/Drawables#vector-drawables) where appropriate.
+* [x] Replace Picasso with [Glide](http://inthecheesefactory.com/blog/get-to-know-glide-recommended-by-google/en) for more efficient image rendering.
+* [ ] Uses [retrolambda expressions](http://guides.codepath.com/android/Lambda-Expressions) to cleanup event handling blocks.
+* [ ] Leverages the popular [GSON library](http://guides.codepath.com/android/Using-Android-Async-Http-Client#decoding-with-gson-library) to streamline the parsing of JSON data.
+* [ ] Leverages the [Retrofit networking library](http://guides.codepath.com/android/Consuming-APIs-with-Retrofit) to access the New York Times API.
+* [ ] Replace the embedded `WebView` with [Chrome Custom Tabs](http://guides.codepath.com/android/Chrome-Custom-Tabs) using a custom action button for sharing. (_**2 points**_)
+
+The following **additional** features are implemented:
+
+* [x] Using DialogFragment for Setting filter
+
+
+## Video Walkthrough
+
+Here's a walkthrough of implemented user stories:
+<br/>
+<img src='https://github.com/emrood/NYTS/blob/master/gif1.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='https://github.com/emrood/NYTS/blob/master/gif2.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='https://github.com/emrood/NYTS/blob/master/gif33.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+
+GIF created with [AZ screen Recorder](https://play.google.com/store/apps/details?id=com.hecorat.screenrecorder.free&hl=fr).
+
+
+
+## Open-source libraries used
+
+- [Android Async HTTP](https://github.com/loopj/android-async-http) - Simple asynchronous HTTP requests with JSON parsing
+- [Picasso](http://square.github.io/picasso/) - Image loading and caching library for Android
+
+## License
+
+    Copyright [2018] | [SAINTILIEN Wilson]
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+        http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+
